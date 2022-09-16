@@ -1,0 +1,15 @@
+[package]
+name = "openocd-wrapper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+user-error = "1.2.8"
+regex = "1"
+async-std = "1.11.0"
+heim = {version = "0.1.0-rc.1", default-features = false, features = ["process"]}
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1"
+lazy_static = "1.4.0"
